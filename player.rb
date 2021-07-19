@@ -5,18 +5,18 @@ class Player
   def initialize (name)
     self.name = name
     self.lives = 3
-    self.score = 0
   end
 
   def greeting 
     puts "Greeting #{self.name} welcome to the game, you start with #{self.lives} lives"
   end
 
-  # def wrong_answer
-  #   self.lives -= 1
-  # def
-
-  def right_answer
-    self.score += 1
+  def wrong_answer
+    self.lives -= 1
   end
+
+  def is_dead
+    self.lives == 0 
+  end
+
 end

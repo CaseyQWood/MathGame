@@ -1,5 +1,12 @@
 require './game'
 require './player'
+require './question'
+
+# question1 = Question.new
+# puts question1.question
+
+# answer = gets.strip
+# puts question1.check(answer)
 
 puts 'Please enter your name for player1'
 name1 = gets.strip
@@ -9,8 +16,6 @@ name2 = gets.strip
 
 game1 = Game.new(name1, name2)
 
-game1.player_list
+game1.start
 
 
-# player1 = Player.new(name1)
-# player1.greeting
